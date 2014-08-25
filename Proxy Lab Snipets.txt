@@ -1,0 +1,28 @@
+Internet address structure	20-29
+DNS host entry structure	20-33
+Program that queries DNS	20-35
+
+Overview of the Sockets Interface	21-12
+Generic socket address structure	21-13
+Internet-specific socket address structure	21-14
+Echo Client Main Routine	21-16
+Echo Server Main Routine	21-24   77770133
+
+Tiny Web Server		22-18
+Additional CGI Environment Variables	22-30
+JSON example		22-41
+
+Process-Based Concurrent Echo Server	23-20
+Thread-Based Concurrent Echo Server	23-
+
+Example Program to Illustrate Sharing	24-11
+
+sbuf Package - Declarations	25-12
+Sample program using sbuf	25-16
+Solution to First Readers-Writers Problem	25-28
+
+Classes of thread-unsafe functions:􏰁 Class 1: Functions that do not protect shared variables􏰁 Class 2: Functions that keep state across multiple invocations 
+􏰁 Class 3: Functions that return a pointer to a static variable􏰁 Class 4: Functions that call thread-unsafe functions
+(use gethostbyname_r() instead of gethostbyname()
+
+Prethreaded Concurrent Server	25-48

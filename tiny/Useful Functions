@@ -1,0 +1,40 @@
+/* Robustly read n bytes (unbuffered) */
+ssize_t rio_readn(int fd, void *usrbuf, size_t n);
+
+/* Robustly write n bytes (unbuffered) */
+ssize_t rio_writen(int fd, void *usrbuf, size_t n);
+
+/* Associate a descriptor with a read buffer and reset buffer */
+void rio_readinitb(rio_t *rp, int fd);
+
+/* Robustly read n bytes (buffered) */
+ssize_t	rio_readnb(rio_t *rp, void *usrbuf, size_t n);
+
+/* robustly read a text line (buffered) */
+ssize_t	rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen);
+
+
+/* Defining a lock (example) */
+pthread_rwlock_t lock;
+
+/* Initializes the lock with attributes. NULL is default. */
+pthread_rwlock_init(&lock, NULL);
+
+/* Reader locks a region */
+pthread_rwlock_rdlock(&lock);
+
+/* Writer locks a region */
+pthread_rwlock_wrlock(&lock);
+
+/* Unlocks a lock */
+pthread_rwlock_unlock(&lock);
+
+pthread_create();
+pthread_join();
+pthread_detach();
+pthread_self();
+pthread_cancel();
+pthread_exit();
+exit();		/* terminates all threads */
+return();	/* terminates current thread */
+

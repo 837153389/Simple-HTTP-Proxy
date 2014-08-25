@@ -1,0 +1,20 @@
+MY Port Number:	2860		2861
+
+ssh guantinl@angelshark.ics.cs.cmu.edu
+cd private/18213/proxy
+
+
+curl -v --proxy http://localhost:2860 http://localhost:15213/home.html
+
+telnet {HTTP_HOST} {PORT}
+curl [--proxy PROXY_HOST:PORT] {HTTP_HOST}
+
+www.baidu.com
+180.76.3.151
+
+
+
+Reddit, Vimeo, CNN, YouTube, NY Times
+
+make handin
+—> proxylab-handin.tar (finally)
